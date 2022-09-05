@@ -1,0 +1,165 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-image: linear-gradient(120deg, #ca62b455, #3ddfdf22);
+        list-style: none;
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    header {
+        padding: 3rem 0;
+        font-size: 2rem;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input {
+        padding: .6rem;
+        outline: none;
+        border: none;
+        width: 18rem;
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+        font-size: 1.3rem
+    }
+    
+    form button {
+        background: #fff;
+        padding: .6rem;
+        outline: none;
+        border: none;
+        color: #f010bf;
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        cursor: pointer;
+        font-size: 1.3rem;
+    }
+    
+    form button:hover {
+        color: #35f8f869;
+    }
+    
+    .todo-list {
+        min-width: 20rem;
+    }
+    
+    .todo {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: .2rem;
+        -webkit-border-radius: .2rem;
+        -moz-border-radius: .2rem;
+        -ms-border-radius: .2rem;
+        -o-border-radius: .2rem;
+    }
+    
+    .todo .todo-item {
+        list-style: none;
+        flex: 1;
+        padding-left: .5rem;
+    }
+    
+    .check-btn,
+    .trash-btn {
+        background-color: #49cc49;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: .9rem;
+        padding: .5rem;
+    }
+    
+    .trash-btn {
+        background: #ff6f47;
+    }
+    
+    .fa-trash,
+    .fa-check {
+        pointer-events: none;
+    }
+    
+    .completed {
+        text-decoration: line-through;
+        opacity: .6;
+    }
+    
+    .fall {
+        transform: translateY(10rem) rotateZ(20deg);
+        -webkit-transform: translateY(10rem) rotateZ(20deg);
+        -moz-transform: translateY(10rem) rotateZ(20deg);
+        -ms-transform: translateY(10rem) rotateZ(20deg);
+        -o-transform: translateY(10rem) rotateZ(20deg);
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        opacity: 0;
+    }
+    
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        border: none;
+    }
+    
+    select {
+        cursor: pointer;
+        width: 10rem;
+        color: #000000;
+        font-weight: bold;
+        border-radius: .2rem;
+        -webkit-border-radius: .2rem;
+        -moz-border-radius: .2rem;
+        -ms-border-radius: .2rem;
+        -o-border-radius: .2rem;
+        padding: .8rem;
+    }
+    
+    .select {
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .select::after {
+        content: "\25BC";
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: .8rem;
+        background-color: #f010bf;
+        color: #fff;
+    }
+    
+    .select:hover::after {
+        background-color: #35f8f869;
+        pointer-events: none;
+    }
